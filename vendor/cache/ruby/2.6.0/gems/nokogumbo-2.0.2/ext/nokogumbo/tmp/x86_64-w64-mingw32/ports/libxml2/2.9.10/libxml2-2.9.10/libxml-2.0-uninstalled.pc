@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=${pcfiledir}/include
+
+
+Name: libXML
+Version: 2.9.10
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2   -LC:/Ruby26-x64/msys64/mingw64/lib -lz   -liconv  
+Cflags: -I${includedir} -I${includedir}/libxml2  -DLIBXML_STATIC

@@ -1,0 +1,116 @@
+find_header: checking for libxml/tree.h in /home/flavorjones/code/oss/nokogiri/ports/x86_64-w64-mingw32/libxml2/2.9.10/include/libxml2... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -std=c99 conftest.c  -L. -LC:/Ruby26-x64/lib -L. -pipe -s -fstack-protector-strong     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return 0;
+8: }
+/* end */
+
+"x86_64-w64-mingw32-gcc -E -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -std=c99  conftest.c -o conftest.i"
+conftest.c:5:10: fatal error: libxml/tree.h: No such file or directory
+    5 | #include <libxml/tree.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <libxml/tree.h>
+/* end */
+
+"x86_64-w64-mingw32-gcc -E -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -std=c99 -I/home/flavorjones/code/oss/nokogiri/ports/x86_64-w64-mingw32/libxml2/2.9.10/include/libxml2 conftest.c -o conftest.i"
+conftest.c:5:10: fatal error: libxml/tree.h: No such file or directory
+    5 | #include <libxml/tree.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <libxml/tree.h>
+/* end */
+
+--------------------
+
+find_header: checking for libxml/tree.h in ports/x86_64-w64-mingw32/libxml2/2.9.10/include/libxml2... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -std=c99  conftest.c -o conftest.i"
+conftest.c:5:10: fatal error: libxml/tree.h: No such file or directory
+    5 | #include <libxml/tree.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <libxml/tree.h>
+/* end */
+
+"x86_64-w64-mingw32-gcc -E -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -std=c99 -Iports/x86_64-w64-mingw32/libxml2/2.9.10/include/libxml2 conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <libxml/tree.h>
+/* end */
+
+--------------------
+
+find_header: checking for nokogiri.h in D:/EducationTatva/Blog/emerald/vendor/cache/ruby/2.6.0/gems/nokogiri-1.10.9-x64-mingw32/ext/nokogiri... -------------------- no
+
+"x86_64-w64-mingw32-gcc -E -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -Iports/x86_64-w64-mingw32/libxml2/2.9.10/include/libxml2 -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -std=c99  conftest.c -o conftest.i"
+conftest.c:5:10: fatal error: nokogiri.h: No such file or directory
+    5 | #include <nokogiri.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <nokogiri.h>
+/* end */
+
+"x86_64-w64-mingw32-gcc -E -IC:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby26-x64/include/ruby-2.6.0/ruby/backward -IC:/Ruby26-x64/include/ruby-2.6.0 -I. -Iports/x86_64-w64-mingw32/libxml2/2.9.10/include/libxml2 -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -std=c99 -ID:/EducationTatva/Blog/emerald/vendor/cache/ruby/2.6.0/gems/nokogiri-1.10.9-x64-mingw32/ext/nokogiri conftest.c -o conftest.i"
+In file included from conftest.c:5:
+D:/EducationTatva/Blog/emerald/vendor/cache/ruby/2.6.0/gems/nokogiri-1.10.9-x64-mingw32/ext/nokogiri/nokogiri.h:13: warning: "_GNU_SOURCE" redefined
+   13 | #define _GNU_SOURCE
+      | 
+In file included from C:/Ruby26-x64/include/ruby-2.6.0/ruby/ruby.h:24,
+                 from C:/Ruby26-x64/include/ruby-2.6.0/ruby.h:33,
+                 from conftest.c:1:
+C:/Ruby26-x64/include/ruby-2.6.0/x64-mingw32/ruby/config.h:17: note: this is the location of the previous definition
+   17 | #define _GNU_SOURCE 1
+      | 
+In file included from conftest.c:5:
+D:/EducationTatva/Blog/emerald/vendor/cache/ruby/2.6.0/gems/nokogiri-1.10.9-x64-mingw32/ext/nokogiri/nokogiri.h:31:10: fatal error: libxslt/extensions.h: No such file or directory
+   31 | #include <libxslt/extensions.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <nokogiri.h>
+/* end */
+
+--------------------
+
