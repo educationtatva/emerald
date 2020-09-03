@@ -1,1 +1,0 @@
-["--host=x86_64-w64-mingw32", "--enable-static", "--disable-shared", "--without-python", "--without-readline", "--with-c14n", "--with-debug", "--with-threads", "--prefix=D:/EducationTatva/Blog/emerald/vendor/cache/ruby/2.6.0/gems/nokogumbo-2.0.2/ext/nokogumbo/ports/x86_64-w64-mingw32/libxml2/2.9.10"]
